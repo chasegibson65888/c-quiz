@@ -1,0 +1,40 @@
+﻿html, body {
+    background-color: rgb(215, 193, 221);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1, h2, a, span {
+    color: red;
+}
+
+#score-list {
+    font-size: 1.2rem;
+    color: blue;    
+}
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+li {
+    counter-increment: li;
+}
+
+li::before {
+    content: "." counter(li);
+    color: green;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1.5rem;
+    margin-right: 0.5rem;
+    text-align: right;
+    direction: rtl;
+}
+
+hr {
+    height: 5px;
+    background-color: white;
+}
+
+#scoresTitle {
+    padding-left: 1rem;
+}
